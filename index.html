@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Police Graduation</title>
+    <link rel="icon" type="image/x-icon" href="Logo_LSPD.ico">
+    <link rel="stylesheet" href="grad.css">
+</head>
+
+<script>
+function searchNames() {
+    let input = document.getElementById("searchInput");
+    let filter = input.value.toLowerCase();
+    let lists = document.querySelectorAll("ul li");
+
+    lists.forEach(function(item) {
+        let text = item.textContent.toLowerCase();
+        if (text.includes(filter)) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+</script>
+
+
+<body>
+
+    <header class="lspd-header">
+    <div class="nav-left">
+        <img src="Logo_LSPD.png" alt="LSPD Logo" class="logo">
+        <span class="dept-name">Los Santos Police Department</span>
+    </div>
+
+
+    </nav>
+</header>
+
+
+<div class="container">
+    <h1>Police Graduation</h1>
+    <input type="text" id="searchInput" placeholder="Search officer name..." onkeyup="searchNames()">
+    <nav class="nav-right">
+    <section>
+        <h2>CHIEF POLICE</h2>
+        <ul>
+            <li><strong>999|Jhon Carter</strong></li>
+        </ul>
+    </section>
+    <section>
+        <h2>High rank Promotions</h2>
+        <ul>
+            <li><strong>444 | DIEGO WASHINGTON</strong>— commander → ? </li>
+            <li><strong>???|Max payne</strong>— commander → ? </li>
+            <li><strong>888|Mario Guevara</strong>— Captain → Deputy commander</li>
+            <li><strong>111|Ruslan Roskovich</strong>— First Lieutenant → Captain</li>
+            <li><strong>218|Jack Berman</strong>— Lieutenant → First Lieutenant</li>
+            <li><strong>131|Vladimir Makarov</strong>— Lieutenant → First Lieutenant</li>
+            <li><strong>104|Fredrico Castillo</strong>— Staff Sergeant → Lieutenant</li>
+            <li><strong>333|Hector Morgan</strong>— Staff Sergeant → Lieutenant</li>
+            <li><strong>103|Jack Anderson</strong>— Sergeant → Lieutenant</li>
+            <li><strong>186|Lu Alexander</strong>— Senior Corporal → Sergeant</li>
+            <li><strong>206|Stive Melon</strong>— Senior Corporal → Sergeant</li>
+            <li><strong>281|Fernando Monroe</strong>— Officer III → Sergeant (Quatro Rank)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Corporal Promotions</h2>
+        <ul>
+            <li>139|Filon Harris — Corporal → Senior Corporal</li>
+            <li>220|Odgy Payne — Corporal → Senior Corporal</li>
+            <li>234|Emilio Grande — Corporal → Senior Corporal</li>
+            <li>228|Epec Payne — Corporal → Senior Corporal</li>
+            <li>156|Dwayne Restova — Staff Officer → Corporal</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Staff Officers</h2>
+        <ul>
+            <li>Taco Jhonson — Senior Officer → Staff Officer</li>
+            <li>145|Devastro Moreti — Senior Officer → Staff Officer</li>
+            <li>164|Hard Taylor — Senior Officer → Staff Officer</li>
+            <li>181|Aatrox Lim — Senior Officer → Staff Officer</li>
+            <li>270|Davinci Russo — Senior Officer → Staff Officer</li>
+            <li>302|Zain Saint — Senior Officer → Staff Officer</li>
+            <li>313|Loobkta Carter — Senior Officer → Staff Officer</li>
+            <li>286|Mario Lopez — Senior Officer → Staff Officer</li>
+            <li>211|Angus Bough — Senior Officer → Staff Officer</li>
+            <li>151|Tony Garcia — Senior Officer → Staff Officer</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Officer Promotions</h2>
+        <ul>
+            <li>101|Tyler Maldini — Officer III → Staff Officer (Double Rank)</li>
+            <li>197|Casinisto Padrino — Officer III → Senior Officer</li>
+            <li>253|Sarah Cloyd — Officer III → Staff Officer</li>
+            <li>261|Isadora Lopez — Officer III → Staff Officer</li>
+            <li>194|Snow Kingsman — Senior Officer → Staff Officer</li>
+            <li>318|Wayne Jhonson — Officer III → Senior Officer</li>
+            <li>158|Jask Valgrade — Officer III → Senior Officer</li>
+            <li>150|Alice De Silva — Officer II → Officer III</li>
+            <li>178|Redix De Silva — Officer II → Officer III</li>
+            <li>295|Dwayne Jhonson — Officer II → Officer III</li>
+            <li>316|Philip Walton — Officer II → Officer III</li>
+            <li>319|Olmo Palmer — Officer II → Officer III</li>
+        </ul>
+    </section>
+        <section class="demotions">
+        <h2>Demotions high ranks & Adjustments</h2>
+        <ul>
+            <li>221|Maxim Payne — Sergeant → Senior Corporal</li>
+            <li>200|Robert Jhonson - Staff Sergent → Sergent </li>
+        </ul>
+    </section>
+
+            <section class="demotions">
+        <h2>Demotions & Rank Adjustments</h2>
+        <ul>
+            <li>147 |Rosa Diaz — Officer III → Officer II</li>
+            <li>152 |Jhonny English — Officer III → Officer II</li>
+            <li>158 |Jake Skyler — Officer III → Officer II</li>
+            <li>201 |Axel Lou — Officer III → Officer II</li>
+        </ul>
+    </section>
+
+</div>
+
+
+
+</body>
+</html>
